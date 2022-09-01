@@ -2,7 +2,7 @@ async function fetchData() {
     document.getElementById('loading').style.display = 'block';
     document.getElementById('table').style.display = 'none';
 
-    var api= 'XwdlbjEs0H6jIOn5A9BmJumqcvXVzkf1' ;
+    var api= '' ;
     const res=await fetch ("http://dataservice.accuweather.com/currentconditions/v1/27905?apikey="+api);
     const record=await res.json();
     console.log(record);
